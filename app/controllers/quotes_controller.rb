@@ -1,10 +1,11 @@
 class QuotesController < ApplicationController
   def index
-    render json: Quote.all
+    quotes = Quote.all
     render json: { status: 200, quote: quotes }
   end
 
   def show
-    render json: {status: 200, Quote.find(params[:id])}
+    quote = Quote.find(params[:id])
+    render json: {status: 200, quote: quote}
   end
 end
