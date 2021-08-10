@@ -72,6 +72,12 @@ Quote.create(
     quoteby: 'Karl A. Menninger'
   )
 
+  Quote.create(
+    quoteid: 12,
+    quotetext: "Love cures people - both the ones who give it and the ones who receive it.",
+    quoteby: 'Karl A. Menninger'
+  )
+
 
 #   quotes = Quote.create([
 #     {quoteid: 1, quotetext:'123'},
