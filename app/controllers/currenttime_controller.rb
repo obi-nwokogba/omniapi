@@ -82,9 +82,6 @@ class CurrenttimeController < ApplicationController
 
     when 'england'
       Time.zone = 'Edinburgh'
-      twelvehourtime = formattime(Time.zone.now)
-      twentyfourhourtime = formattime2(Time.zone.now)
-      timeanddate = formattimeanddate(Time.zone.now)
 
     when 'equitorialguinea'
       Time.zone = 'West Central Africa'
@@ -92,6 +89,8 @@ class CurrenttimeController < ApplicationController
       when 'faroeisland'
       Time.zone = 'Dublin'
     
+    when 'france'
+      Time.zone = 'Europe/Paris'
 
     when 'gabon'
       Time.zone = 'West Central Africa'
@@ -112,7 +111,7 @@ class CurrenttimeController < ApplicationController
     when 'japan'
       Time.zone = 'Tokyo'
 
-    when 'northernirelan'
+    when 'northernireland'
       Time.zone = 'Dublin'
 
     when 'niger'
