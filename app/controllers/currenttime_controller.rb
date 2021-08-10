@@ -1,55 +1,74 @@
 class CurrenttimeController < ApplicationController
-
-  def formattime (unformattedtime)
-    return unformattedtime.strftime('%I:%M %p')
+  def formattime(unformattedtime)
+    unformattedtime.strftime('%I:%M %p')
   end
 
   def index
-    currentdateandtime = Time.zone.now
-    render json: { status: 200, currentdateandtime: currentdateandtime }
+    # ENGLAND
+    Time.zone = 'Edinburgh'
+    england = formattime(Time.zone.now)
+
+    # IRELAND
+    Time.zone = 'Dublin'
+    ireland = formattime(Time.zone.now)
+
+    # ISRAEL
+    Time.zone = 'Jerusalem'
+    israel = formattime(Time.zone.now)
+
+    # SOUTH AFRICA
+    Time.zone = 'Pretoria'
+    southafrica = formattime(Time.zone.now)
+
+    render json:
+    { status: 200,
+      currentworldtimes: {
+        england: england,
+        ireland: ireland,
+        israel: israel,
+        southafrica: southafrica
+      } }
   end
 
   def show
     location = params[:id]
 
-    #convert parameter to lowercase for case comparison
+    # convert parameter to lowercase for case comparison
     location = location.downcase
-    
-    #conditionals to provide the right time requested
+
+    # conditionals to provide the right time requested
     case location
-    when "england"
-      Time.zone = "Edinburgh"
+    when 'england'
+      Time.zone = 'Edinburgh'
       currenttime = formattime(Time.zone.now)
 
-    when "greece"
-      Time.zone = "Athens"
+    when 'greece'
+      Time.zone = 'Athens'
       currenttime = formattime(Time.zone.now)
 
-    when "ireland"
-      Time.zone = "Dublin"
+    when 'ireland'
+      Time.zone = 'Dublin'
       currenttime = formattime(Time.zone.now)
 
-    when "israel"
-      Time.zone = "Jerusalem"
+    when 'israel'
+      Time.zone = 'Jerusalem'
       currenttime = formattime(Time.zone.now)
 
-    when "japan"
-      Time.zone = "Tokyo"
+    when 'japan'
+      Time.zone = 'Tokyo'
       currenttime = formattime(Time.zone.now)
 
-    when "nigeria"
-      Time.zone = "Nigeria"
+    when 'nigeria'
+      Time.zone = 'Nigeria'
       currenttime = formattime(Time.zone.now)
 
     else
-      currenttime = "else"
+      currenttime = 'else'
     end
 
-    #render json output
+    # render json output
     render json: { status: 200, twelvehourtime: currenttime }
   end
-
-
 end
 
 # COUNTRIES WITH JUST ONE TIME ZONE:
