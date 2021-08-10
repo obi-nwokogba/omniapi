@@ -43,6 +43,7 @@ Last updated: August 10, 2021
 * https://omniapi7.herokuapp.com/currenttime/northernireland
 * https://omniapi7.herokuapp.com/currenttime/portugal
 * https://omniapi7.herokuapp.com/currenttime/scotland
+* https://omniapi7.herokuapp.com/currenttime/switzerland
 * https://omniapi7.herokuapp.com/currenttime/wales
 
 

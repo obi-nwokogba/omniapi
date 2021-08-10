@@ -101,7 +101,6 @@ class CurrenttimeController < ApplicationController
     when 'iceland'
       Time.zone = 'Dublin'
 
-
     when 'ireland'
       Time.zone = 'Dublin'
 
@@ -126,10 +125,12 @@ class CurrenttimeController < ApplicationController
     when 'scotland'
       Time.zone = 'Dublin'
 
+    when 'switzerland'
+      Time.zone = 'Europe/Zurich'
+
     when 'wales'
       Time.zone = 'Dublin'
       
-
     else
       twelvehourtime = ' '
       twentyfourhourtime = ' '
