@@ -13,9 +13,15 @@ class CurrenttimeController < ApplicationController
   end
 
   # ==========================================
-   # This function returns 24 hour time like 21:08
+   # This function returns 7:06:57 PM - 10 08 2021"
    def formattimeanddate(unformattedtime)
     unformattedtime.strftime('%I:%M:%S %p - %d %m %Y')
+  end
+
+   # ==========================================
+   # This function returns 7:06:57 PM - 10 08 2021"
+   def formatwrittendate(unformattedtime)
+    unformattedtime.strftime('%A, %d %B, %Y')
   end
 
   # ==========================================
@@ -141,13 +147,15 @@ class CurrenttimeController < ApplicationController
     twelvehourtime = formattime(Time.zone.now)
       twentyfourhourtime = formattime2(Time.zone.now)
       timeanddate = formattimeanddate(Time.zone.now)
+      writtendate = formatwrittendate(Time.zone.now)
 
     # render json output
     render json: { 
       status: 200, 
       twelvehourtime: twelvehourtime,
      twentyfourhourtime:twentyfourhourtime,
-    timeanddate: timeanddate}
+    timeanddate: timeanddate,
+  writtendate:writtendate}
   end
 end
 
