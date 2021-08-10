@@ -1,15 +1,15 @@
-# README
+# OmniAPI
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+## Current Routes
 
-* Ruby version
+* https://omniapi7.herokuapp.com/quotes
 
-* System dependencies
+* https://omniapi7.herokuapp.com/currenttime
 
-* Configuration
+* https://omniapi7.herokuapp.com/currenttime/england
 
 * Database creation
 
