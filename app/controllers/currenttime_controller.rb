@@ -1,8 +1,24 @@
 class CurrenttimeController < ApplicationController
+
+  # ==========================================
+  # This function returns 12 hour time like 07:03 PM
   def formattime(unformattedtime)
-    unformattedtime.strftime('%I:%M %p')
+    unformattedtime.strftime('%l:%M %p')
   end
 
+  # ==========================================
+  # This function returns 24 hour time like 21:08
+  def formattime2(unformattedtime)
+    unformattedtime.strftime('%H:%M:%S')
+  end
+
+  # ==========================================
+   # This function returns 24 hour time like 21:08
+   def formattimeanddate(unformattedtime)
+    unformattedtime.strftime('%I:%M:%S %p - %d %m %Y')
+  end
+
+  # ==========================================
   def index
     # ENGLAND
     Time.zone = 'Edinburgh'
@@ -30,6 +46,7 @@ class CurrenttimeController < ApplicationController
       } }
   end
 
+  # ==========================================
   def show
     location = params[:id]
 
@@ -38,39 +55,103 @@ class CurrenttimeController < ApplicationController
 
     # conditionals to provide the right time requested
     case location
+
+    when 'algeria'
+      Time.zone = 'West Central Africa'
+
+    when 'angola'
+      Time.zone = 'West Central Africa'
+
+    when 'benin'
+      Time.zone = 'West Central Africa'
+
+    when 'cameroon'
+      Time.zone = 'West Central Africa'
+
+    when 'centralafricanrepublic'
+      Time.zone = 'West Central Africa'
+
+    when 'chad'
+      Time.zone = 'West Central Africa'
+
+    when 'congo'
+      Time.zone = 'West Central Africa'
+
+    when 'demrepcongo'
+      Time.zone = 'West Central Africa'
+
     when 'england'
       Time.zone = 'Edinburgh'
-      currenttime = formattime(Time.zone.now)
+      twelvehourtime = formattime(Time.zone.now)
+      twentyfourhourtime = formattime2(Time.zone.now)
+      timeanddate = formattimeanddate(Time.zone.now)
+
+    when 'equitorialguinea'
+      Time.zone = 'West Central Africa'
+
+      when 'faroeisland'
+      Time.zone = 'Dublin'
+    
+
+    when 'gabon'
+      Time.zone = 'West Central Africa'
 
     when 'greece'
       Time.zone = 'Athens'
-      currenttime = formattime(Time.zone.now)
+
+    when 'iceland'
+      Time.zone = 'Dublin'
+
 
     when 'ireland'
       Time.zone = 'Dublin'
-      currenttime = formattime(Time.zone.now)
 
     when 'israel'
       Time.zone = 'Jerusalem'
-      currenttime = formattime(Time.zone.now)
 
     when 'japan'
       Time.zone = 'Tokyo'
-      currenttime = formattime(Time.zone.now)
+
+    when 'northernirelan'
+      Time.zone = 'Dublin'
+
+    when 'niger'
+      Time.zone = 'West Central Africa'
 
     when 'nigeria'
-      Time.zone = 'Nigeria'
-      currenttime = formattime(Time.zone.now)
+      Time.zone = 'West Central Africa'
+
+    when 'portugal'
+      Time.zone = 'Dublin'
+
+    when 'scotland'
+      Time.zone = 'Dublin'
+
+    when 'wales'
+      Time.zone = 'Dublin'
+      
 
     else
-      currenttime = 'else'
+      twelvehourtime = ' '
+      twentyfourhourtime = ' '
+      timeanddate = ' '
     end
 
+#Format time
+    twelvehourtime = formattime(Time.zone.now)
+      twentyfourhourtime = formattime2(Time.zone.now)
+      timeanddate = formattimeanddate(Time.zone.now)
+
     # render json output
-    render json: { status: 200, twelvehourtime: currenttime }
+    render json: { 
+      status: 200, 
+      twelvehourtime: twelvehourtime,
+     twentyfourhourtime:twentyfourhourtime,
+    timeanddate: timeanddate}
   end
 end
 
+# ==========================================
 # COUNTRIES WITH JUST ONE TIME ZONE:
 # Afghanistan (UTC+4:30)
 # Albania (UTC+1/UTC+2)

@@ -18,11 +18,19 @@ Last updated: August 10, 2021
 
 * https://omniapi7.herokuapp.com/currenttime
 
-#### Specific Countries
+#### Time and Date for Specific Countries
+* https://omniapi7.herokuapp.com/currenttime/algeria
+* https://omniapi7.herokuapp.com/currenttime/angola
+* https://omniapi7.herokuapp.com/currenttime/benin
+* https://omniapi7.herokuapp.com/currenttime/cameroon
+* https://omniapi7.herokuapp.com/currenttime/chad
+* https://omniapi7.herokuapp.com/currenttime/congo
 * https://omniapi7.herokuapp.com/currenttime/england
 * https://omniapi7.herokuapp.com/currenttime/greece
 * https://omniapi7.herokuapp.com/currenttime/ireland
 * https://omniapi7.herokuapp.com/currenttime/israel
 * https://omniapi7.herokuapp.com/currenttime/japan
+* https://omniapi7.herokuapp.com/currenttime/niger
+* https://omniapi7.herokuapp.com/currenttime/nigeria
 
 
