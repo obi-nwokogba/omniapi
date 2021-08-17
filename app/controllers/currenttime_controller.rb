@@ -57,6 +57,10 @@ class CurrenttimeController < ApplicationController
     Time.zone = 'Europe/Paris'
     france = formattime(Time.zone.now)
 
+    # GERMANY
+    Time.zone = 'Berlin'
+    germany = formattime(Time.zone.now)
+
     # HUNGARY
     Time.zone = 'Budapest'
     hungary = formattime(Time.zone.now)
@@ -129,6 +133,7 @@ class CurrenttimeController < ApplicationController
                  denmark: denmark,
                  england: england,
                  france: france,
+                 germany:germany,
                  hungary: hungary,
                  iran: iran,
                  iraq: iraq,
@@ -205,6 +210,9 @@ class CurrenttimeController < ApplicationController
 
     when 'gabon'
       Time.zone = 'West Central Africa'
+
+    when 'germany'
+      Time.zone = 'Berlin'
 
     when 'greece'
       Time.zone = 'Athens'
