@@ -115,6 +115,10 @@ class CurrenttimeController < ApplicationController
     Time.zone = 'Singapore'
     singapore = formattime(Time.zone.now)
 
+    # Somalia
+    Time.zone = 'Nairobi'
+    somalia = formattime(Time.zone.now)
+
     # SWITZERLAND
     Time.zone = 'Europe/Zurich'
     switzerland = formattime(Time.zone.now)
@@ -154,6 +158,7 @@ class CurrenttimeController < ApplicationController
                  nigeria: nigeria,
                  puertorico: puertorico,
                  singapore: singapore,
+                 somalia: somalia,
                  southafrica: southafrica,
                  southkorea: southkorea,
                  switzerland: switzerland,
