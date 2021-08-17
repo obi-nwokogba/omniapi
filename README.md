@@ -25,6 +25,7 @@ Last updated: August 10, 2021
 * https://omniapi7.herokuapp.com/currenttime/angola
 * https://omniapi7.herokuapp.com/currenttime/benin
 * https://omniapi7.herokuapp.com/currenttime/cameroon
+* https://omniapi7.herokuapp.com/currenttime/capeverde
 * https://omniapi7.herokuapp.com/currenttime/centralafricanrepublic
 * https://omniapi7.herokuapp.com/currenttime/chad
 * https://omniapi7.herokuapp.com/currenttime/congo
@@ -34,6 +35,7 @@ Last updated: August 10, 2021
 * https://omniapi7.herokuapp.com/currenttime/faroeisland
 * https://omniapi7.herokuapp.com/currenttime/france
 * https://omniapi7.herokuapp.com/currenttime/gabon
+* https://omniapi7.herokuapp.com/currenttime/germany
 * https://omniapi7.herokuapp.com/currenttime/greece
 * https://omniapi7.herokuapp.com/currenttime/hungary
 * https://omniapi7.herokuapp.com/currenttime/iran

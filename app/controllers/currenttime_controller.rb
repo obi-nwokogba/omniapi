@@ -37,6 +37,10 @@ class CurrenttimeController < ApplicationController
     niger = formattime(Time.zone.now)
     nigeria = formattime(Time.zone.now)
 
+    # CAPE VERDE
+    Time.zone = 'Atlantic/Cape_Verde'
+    capeverde = formattime(Time.zone.now)
+
     # CHINA
     Time.zone = 'Asia/Shanghai'
     china = formattime(Time.zone.now)
@@ -119,6 +123,10 @@ class CurrenttimeController < ApplicationController
     Time.zone = 'Taipei'
     taiwan = formattime(Time.zone.now)
 
+    # TANZANIA
+    Time.zone = 'Nairobi'
+    tanzania = formattime(Time.zone.now)
+
     render json:
              { status: 200,
                currentworldtimes: {
@@ -126,6 +134,7 @@ class CurrenttimeController < ApplicationController
                  angola: angola,
                  benin: benin,
                  cameroon: cameroon,
+                 capeverde: capeverde,
                  chad: chad,
                  china: china,
                  colombia: colombia,
@@ -149,6 +158,7 @@ class CurrenttimeController < ApplicationController
                  southkorea: southkorea,
                  switzerland: switzerland,
                  taiwan: taiwan,
+                 tanzania: tanzania,
                  wales: wales
                } }
   end
@@ -174,6 +184,9 @@ class CurrenttimeController < ApplicationController
 
     when 'cameroon'
       Time.zone = 'West Central Africa'
+
+    when 'capeverde'
+      Time.zone = 'Atlantic/Cape_Verde'
 
     when 'centralafricanrepublic'
       Time.zone = 'West Central Africa'
