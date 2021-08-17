@@ -35,15 +35,21 @@ Last updated: August 10, 2021
 * https://omniapi7.herokuapp.com/currenttime/france
 * https://omniapi7.herokuapp.com/currenttime/gabon
 * https://omniapi7.herokuapp.com/currenttime/greece
+* https://omniapi7.herokuapp.com/currenttime/hungary
+* https://omniapi7.herokuapp.com/currenttime/iran
+* https://omniapi7.herokuapp.com/currenttime/iraq
 * https://omniapi7.herokuapp.com/currenttime/ireland
 * https://omniapi7.herokuapp.com/currenttime/israel
 * https://omniapi7.herokuapp.com/currenttime/japan
+* https://omniapi7.herokuapp.com/currenttime/kenya
+* https://omniapi7.herokuapp.com/currenttime/kuwait
 * https://omniapi7.herokuapp.com/currenttime/niger
 * https://omniapi7.herokuapp.com/currenttime/nigeria
 * https://omniapi7.herokuapp.com/currenttime/northernireland
 * https://omniapi7.herokuapp.com/currenttime/portugal
 * https://omniapi7.herokuapp.com/currenttime/scotland
 * https://omniapi7.herokuapp.com/currenttime/switzerland
+* https://omniapi7.herokuapp.com/currenttime/taiwan
 * https://omniapi7.herokuapp.com/currenttime/wales
 
 
