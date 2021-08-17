@@ -108,6 +108,10 @@ class CurrenttimeController < ApplicationController
     Time.zone = 'Kuwait'
     kuwait = formattime(Time.zone.now)
 
+    # MADAGASCAR
+    Time.zone = 'Nairobi'
+    madagascar = formattime(Time.zone.now)
+
     # PUERTO RICO
     Time.zone = 'Puerto Rico'
     puertorico = formattime(Time.zone.now)
@@ -164,6 +168,7 @@ class CurrenttimeController < ApplicationController
                  israel: israel,
                  kenya: kenya,
                  kuwait: kuwait,
+                 madagascar: madagascar,
                  niger: niger,
                  nigeria: nigeria,
                  puertorico: puertorico,
@@ -278,6 +283,9 @@ class CurrenttimeController < ApplicationController
 
     when 'kuwait'
       Time.zone = 'Asia/Kuwait'
+
+    when 'madagascar'
+      Time.zone = 'Nairobi'
 
     when 'northernireland'
       Time.zone = 'Dublin'
