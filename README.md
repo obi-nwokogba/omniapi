@@ -32,6 +32,7 @@ Last updated: August 10, 2021
 * https://omniapi7.herokuapp.com/currenttime/demrepcongo
 * https://omniapi7.herokuapp.com/currenttime/england
 * https://omniapi7.herokuapp.com/currenttime/equitorialguinea
+* https://omniapi7.herokuapp.com/currenttime/ethiopia
 * https://omniapi7.herokuapp.com/currenttime/faroeisland
 * https://omniapi7.herokuapp.com/currenttime/france
 * https://omniapi7.herokuapp.com/currenttime/gabon
@@ -50,6 +51,7 @@ Last updated: August 10, 2021
 * https://omniapi7.herokuapp.com/currenttime/northernireland
 * https://omniapi7.herokuapp.com/currenttime/portugal
 * https://omniapi7.herokuapp.com/currenttime/scotland
+* https://omniapi7.herokuapp.com/currenttime/somalia
 * https://omniapi7.herokuapp.com/currenttime/switzerland
 * https://omniapi7.herokuapp.com/currenttime/taiwan
 * https://omniapi7.herokuapp.com/currenttime/wales

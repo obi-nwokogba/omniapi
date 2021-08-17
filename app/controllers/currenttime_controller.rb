@@ -1,29 +1,34 @@
 class CurrenttimeController < ApplicationController
   # ==========================================
+
   # This function returns 12 hour time like 07:03 PM
   def formattime(unformattedtime)
     unformattedtime.strftime('%l:%M %p')
   end
 
   # ==========================================
+
   # This function returns 24 hour time like 21:08
   def formattime2(unformattedtime)
     unformattedtime.strftime('%H:%M:%S')
   end
 
   # ==========================================
+
   # This function returns 7:06:57 PM - 10 08 2021"
   def formattimeanddate(unformattedtime)
     unformattedtime.strftime('%I:%M:%S %p - %d %m %Y')
   end
 
   # ==========================================
+
   # This function returns 7:06:57 PM - 10 08 2021"
   def formatwrittendate(unformattedtime)
     unformattedtime.strftime('%A, %d %B, %Y')
   end
 
   # ==========================================
+
   def index
 
     # CAMEROON
@@ -56,6 +61,10 @@ class CurrenttimeController < ApplicationController
     # ENGLAND
     Time.zone = 'Edinburgh'
     england = formattime(Time.zone.now)
+
+    # Ethiopia
+    Time.zone = 'Nairobi'
+    ethiopia = formattime(Time.zone.now)
 
     # FRANCE
     Time.zone = 'Europe/Paris'
@@ -145,6 +154,7 @@ class CurrenttimeController < ApplicationController
                  congo: congo,
                  denmark: denmark,
                  england: england,
+                 ethiopia: ethiopia,
                  france: france,
                  germany:germany,
                  hungary: hungary,
@@ -220,6 +230,9 @@ class CurrenttimeController < ApplicationController
     when 'equitorialguinea'
       Time.zone = 'West Central Africa'
 
+    when 'ethiopia'
+      Time.zone = 'Nairobi'
+
     when 'faroeisland'
       Time.zone = 'Dublin'
 
@@ -283,6 +296,9 @@ class CurrenttimeController < ApplicationController
 
     when 'singapore'
       Time.zone = 'Singapore'
+
+    when 'somalia'
+      Time.zone = 'Nairobi'
 
     when 'switzerland'
       Time.zone = 'Europe/Zurich'
