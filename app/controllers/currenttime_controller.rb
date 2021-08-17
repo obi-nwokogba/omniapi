@@ -3,7 +3,7 @@ class CurrenttimeController < ApplicationController
 
   # This function returns 12 hour time like 07:03 PM
   def formattime(unformattedtime)
-    unformattedtime.strftime('%l:%M %p')
+    (unformattedtime.strftime('%l:%M %p')).strip
   end
 
   # ==========================================

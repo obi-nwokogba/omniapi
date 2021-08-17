@@ -1,12 +1,12 @@
 # OmniAPI
 
-
 ![Logo](https://i.imgur.com/cJpFpFM.png)
 
+OmniAPI is a RESTful JSON API, that aims to provide a generous variety of information and data.
+It can provide random inspirational quote and the current time in various parts of the world.
+OmniAPI was started in August 2021.
 
-OmniAPI is a RESTful JSON API, that aims to provide a generous variety of information and data. It is a project by Obi Nwokogba, and it was started in August 2021.
-
-Last updated: August 10, 2021
+Last updated on August 17, 2021
 
 # Available URL Routes
 
@@ -16,11 +16,13 @@ Last updated: August 10, 2021
 
 ## Times and Dates
 
-### Current time in 12-hour format
+### Current time in 12-hour format 
+This URL currently returns JSON object of 33 countries' time
 
 * https://omniapi7.herokuapp.com/currenttime
 
 ### Time and Date for Specific Countries
+
 * https://omniapi7.herokuapp.com/currenttime/algeria
 * https://omniapi7.herokuapp.com/currenttime/angola
 * https://omniapi7.herokuapp.com/currenttime/benin
@@ -46,6 +48,7 @@ Last updated: August 10, 2021
 * https://omniapi7.herokuapp.com/currenttime/japan
 * https://omniapi7.herokuapp.com/currenttime/kenya
 * https://omniapi7.herokuapp.com/currenttime/kuwait
+* https://omniapi7.herokuapp.com/currenttime/madagascar
 * https://omniapi7.herokuapp.com/currenttime/niger
 * https://omniapi7.herokuapp.com/currenttime/nigeria
 * https://omniapi7.herokuapp.com/currenttime/northernireland
